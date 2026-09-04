@@ -151,3 +151,70 @@ INSERT INTO Department (DepartmentID, DepartmentName) VALUES
 (8, 'Information Science'),
 (9, 'Chemical Engineering'),
 (10, 'Biotechnology');
+
+INSERT INTO Student
+(StudentID, StudentName, Email, Phone, DateOfBirth, Gender, DepartmentID, CGPA, GraduationYear, ResumeURL)
+VALUES
+(1, 'Aarav Patel', 'aarav.patel@email.com', '9876543210', '2004-05-12', 'Male', 1, 8.75, 2026, 'resume/aarav.pdf'),
+(2, 'Diya Shah', 'diya.shah@email.com', '9876543211', '2004-08-21', 'Female', 2, 9.10, 2026, 'resume/diya.pdf'),
+(3, 'Rohan Mehta', 'rohan.mehta@email.com', '9876543212', '2003-11-15', 'Male', 3, 7.85, 2026, 'resume/rohan.pdf'),
+(4, 'Ananya Desai', 'ananya.desai@email.com', '9876543213', '2004-02-18', 'Female', 4, 8.60, 2026, 'resume/ananya.pdf'),
+(5, 'Kunal Joshi', 'kunal.joshi@email.com', '9876543214', '2003-09-30', 'Male', 5, 7.45, 2026, 'resume/kunal.pdf'),
+(6, 'Isha Mehta', 'isha.mehta@email.com', '9876543215', '2004-06-10', 'Female', 6, 8.95, 2026, 'resume/isha.pdf'),
+(7, 'Vivek Trivedi', 'vivek.trivedi@email.com', '9876543216', '2003-12-05', 'Male', 7, 7.70, 2026, 'resume/vivek.pdf'),
+(8, 'Meera Patel', 'meera.patel@email.com', '9876543217', '2004-03-25', 'Female', 8, 9.25, 2026, 'resume/meera.pdf'),
+(9, 'Rahul Shah', 'rahul.shah@email.com', '9876543218', '2003-07-19', 'Male', 9, 8.20, 2026, 'resume/rahul.pdf'),
+(10, 'Neha Joshi', 'neha.joshi@email.com', '9876543219', '2004-10-11', 'Female', 10, 8.40, 2026, 'resume/neha.pdf');
+
+
+INSERT INTO Skill (SkillID, SkillName) VALUES
+(1, 'Java'),
+(2, 'Python'),
+(3, 'C++'),
+(4, 'SQL'),
+(5, 'HTML/CSS'),
+(6, 'JavaScript'),
+(7, 'React'),
+(8, 'Machine Learning'),
+(9, 'Data Structures'),
+(10, 'Communication');
+
+INSERT INTO Student_Skill (StudentID, SkillID, Proficiency) VALUES
+(1, 1, 'Advanced'),
+(2, 2, 'Advanced'),
+(3, 3, 'Intermediate'),
+(4, 5, 'Advanced'),
+(5, 4, 'Intermediate'),
+(6, 8, 'Advanced'),
+(7, 10, 'Advanced'),
+(8, 7, 'Advanced'),
+(9, 6, 'Intermediate'),
+(10, 9, 'Advanced');
+
+INSERT INTO Company
+(CompanyID, CompanyName, Email, Phone, Location, Website, Industry)
+VALUES
+(1, 'Tata Consultancy Services', 'hr@tcs.com', '18002093111', 'Mumbai', 'https://www.tcs.com', 'IT Services'),
+(2, 'Infosys', 'careers@infosys.com', '18004195500', 'Bengaluru', 'https://www.infosys.com', 'IT Services'),
+(3, 'Wipro', 'careers@wipro.com', '18004250425', 'Bengaluru', 'https://www.wipro.com', 'IT Services'),
+(4, 'Accenture', 'careers@accenture.com', '18001234567', 'Pune', 'https://www.accenture.com', 'Consulting'),
+(5, 'Tech Mahindra', 'careers@techmahindra.com', '18003000444', 'Pune', 'https://www.techmahindra.com', 'IT Services'),
+(6, 'IBM', 'careers@ibm.com', '18001234567', 'Bengaluru', 'https://www.ibm.com', 'Technology'),
+(7, 'Deloitte', 'careers@deloitte.com', '18002345678', 'Hyderabad', 'https://www.deloitte.com', 'Consulting'),
+(8, 'Capgemini', 'careers@capgemini.com', '18003456789', 'Mumbai', 'https://www.capgemini.com', 'IT Services'),
+(9, 'Cognizant', 'careers@cognizant.com', '18004567890', 'Chennai', 'https://www.cognizant.com', 'IT Services'),
+(10, 'HCLTech', 'careers@hcltech.com', '18005678901', 'Noida', 'https://www.hcltech.com', 'Technology');
+
+INSERT INTO Job
+(JobID, CompanyID, JobTitle, JobDescription, JobType, MinimumCGPA, Salary, GraduationYear, ApplicationDeadline, JobStatus)
+VALUES
+(1, 1, 'Software Developer', 'Develop software applications.', 'Full-Time', 7.50, 650000, 2026, '2026-09-20', 'Open'),
+(2, 2, 'Systems Engineer', 'Develop and maintain enterprise systems.', 'Full-Time', 7.00, 600000, 2026, '2026-09-21', 'Open'),
+(3, 3, 'Project Engineer', 'Work on software development projects.', 'Full-Time', 7.00, 550000, 2026, '2026-09-22', 'Open'),
+(4, 4, 'Software Engineer', 'Develop modern software solutions.', 'Full-Time', 8.00, 700000, 2026, '2026-09-23', 'Open'),
+(5, 5, 'Web Developer', 'Build responsive web applications.', 'Full-Time', 7.50, 580000, 2026, '2026-09-24', 'Open'),
+(6, 6, 'Data Analyst', 'Analyze business data and generate reports.', 'Full-Time', 8.00, 620000, 2026, '2026-09-25', 'Open'),
+(7, 7, 'Business Analyst', 'Analyze business processes and requirements.', 'Full-Time', 7.50, 680000, 2026, '2026-09-26', 'Open'),
+(8, 8, 'Frontend Developer', 'Develop user-friendly web interfaces.', 'Full-Time', 7.00, 590000, 2026, '2026-09-27', 'Open'),
+(9, 9, 'Programmer Analyst', 'Design and develop software applications.', 'Full-Time', 7.50, 610000, 2026, '2026-09-28', 'Open'),
+(10, 10, 'Cloud Engineer', 'Manage and develop cloud-based solutions.', 'Full-Time', 8.00, 750000, 2026, '2026-09-29', 'Open');
