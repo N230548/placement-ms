@@ -139,3 +139,15 @@ CREATE TABLE UserAccount (
     FOREIGN KEY (OfficerID)
         REFERENCES PlacementOfficer(OfficerID)
 );
+
+INSERT INTO Department (DepartmentID, DepartmentName) VALUES
+(1, 'Computer Science and Engineering'),
+(2, 'Information Technology'),
+(3, 'Electronics and Communication Engineering'),
+(4, 'Mechanical Engineering'),
+(5, 'Civil Engineering'),
+(6, 'Electrical Engineering'),
+(7, 'Artificial Intelligence and Data Science'),
+(8, 'Information Science'),
+(9, 'Chemical Engineering'),
+(10, 'Biotechnology');
